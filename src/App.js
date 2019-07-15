@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Title from './components/Title'
+import LightSwitch from './components/LightSwitch'
 
 class App extends Component {
   render() {
@@ -12,34 +13,12 @@ class App extends Component {
           <h1 className="App-title">Welcome to Codaisseur</h1>
         </header>
         <main>
-          <Title content ="Some simple content"/>
+          <Title content="Some Simple Title" />
+          <LightSwitch />
         </main>
       </div>
     );
   }
 }
-// function App() {
-//   return (
-//     <div className=“App”>
-//       <header className=“App-header”>
-//         <img src={logo} className=“App-logo” alt=“logo” />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className=“App-link”
-//           href=“https://reactjs.org”
-//           target=“_blank”
-//           rel=“noopener noreferrer”
-//         >
-//           Learn React and have fun!
-//         </a>
-//       </header>
-//       <main>
-//         <Title content=“Some simple Title”/>
-//       </main>
-//     </div>
-//   );
-//  }
 
 export default App;
