@@ -1,8 +1,9 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Title from './components/Title'
 import LightSwitch from './components/LightSwitch'
+import User from './components/User'
 
 class App extends Component {
   render() {
@@ -15,6 +16,16 @@ class App extends Component {
         <main>
           <Title content="Some Simple Title" />
           <LightSwitch />
+          <div>
+            <p>
+              User: 
+              <User content="Zorro" />
+            </p>
+            <p>
+              User: 
+              <User content="Batman" />
+            </p>
+          </div>
         </main>
       </div>
     );
